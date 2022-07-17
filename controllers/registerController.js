@@ -11,11 +11,11 @@ const bcrypt = require('bcrypt');
 
 const handleNewUser = async(req, res) =>{
     const {user, password} = req.body
-    if(!user || !password) return res.sendStatus(400).json({'message':'Missing user or password'});
+    if(!user || !password) return res.status(400).json({"message":"Missing user or password"});
 
     //Check for Duplicate Username In DB
     const duplicate = usersDB.users.find(person => person.username === user);
-    if(duplicate) return res.sendStatus(409); //Conflict
+    if(duplicate) return res.status(409); //Conflict
     
     try{
         //Encrypt Password
@@ -32,7 +32,7 @@ const handleNewUser = async(req, res) =>{
         res.status(201).json({'success': `new User ${user} created`});
 
     }catch(err){
-        res.sendStatus(500).json({'message':'Error Creating User'});
+        res.status(500).json({"message":"Error Creating User"});
     }
 }
 
