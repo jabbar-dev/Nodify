@@ -1,0 +1,31 @@
+{
+  "name": "nodify",
+  "version": "1.0.0",
+  "description": "Node JS Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabbar-dev/Nodify.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express",
+    "Node",
+    "Backend"
+  ],
+  "author": "Abdul Jabbar Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jabbar-dev/Nodify/issues"
+  },
+  "homepage": "https://github.com/jabbar-dev/Nodify#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
